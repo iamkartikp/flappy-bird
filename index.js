@@ -12,7 +12,6 @@ starBtn.addEventListener("click", () => {
     
     
     setInterval(() => {
-        console.log("bird.style.marginTop", bird.style.marginTop)
         bird.style.marginTop = Number(bird.style.marginTop.slice(0, -2)) + 50 + "px";
         score.innerText = count;
         count++;

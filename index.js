@@ -8,14 +8,17 @@ const gameContainer = document.getElementById("game-container");
 starBtn.addEventListener("click", () => {
     let count = 0;
     buttonContainer.style.display = "none";
-    scoreContainer.style.display = "none";
+    // scoreContainer.style.display = "none";
     
     
     setInterval(() => {
-        bird.style.marginTop = Number(bird.style.marginTop.slice(0, -2)) + 50 + "px";
         score.innerText = count;
         count++;
     }, 1000)
+
+    setInterval(() => {
+        bird.style.marginTop = Number(bird.style.marginTop.slice(0, -2)) + 50 + "px";
+    }, 500)
 })
 
 gameContainer.addEventListener("click", () => {

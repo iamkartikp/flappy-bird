@@ -30,7 +30,7 @@ h3 {
     font-size: 2em;
 }
 
-#start-btn {
+#start-btn, #high-score {
     border: none;
     background: brown;
     padding: 7px;

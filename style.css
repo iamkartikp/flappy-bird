@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('http://fonts.cdnfonts.com/css/arcade-classic');
+
+* {
+    font-family: 'ArcadeClassic', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#game-container {
+    background: url("/resource/flappy-bird-background-png-4.png");
+    height: 60vh;
+    width: 15vw;
+}
+
+.inner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.inner-container h3 {
+    font-size: 2em;
+}
+
+#start-btn {
+    border: none;
+    background: brown;
+    padding: 7px;
+    color: white;
+    font-size: 1.2em;
+}
+
+.button-container {
+    border: 1px solid brown;
+    background: white;
+    width: 4em;
+    height: 2em;
+    text-align: center;
+}

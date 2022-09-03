@@ -1,13 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flappy Bird | Javascript</title>
+    <link rel="stylesheet" href="style.css">
+    </link>
+    <link rel="icon" type="image/x-icon" href="resource/Flappy-Bird-PNG-Image.png">
 </head>
+
 <body>
-    
+    <div class="container">
+        <div id="game-container">
+            <div class="inner-container">
+                <h3 class="score-container">Score: <span id="score">0</span></h3>
+                <div id="bird">
+                    <img src="/resource/Flappy-Bird-PNG-Image.png" alt="flappy bird" height="100" width="100">
+                </div>
+                <div class="button-container">
+                    <button id="start-btn">Start</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="index.js"></script>
 </body>
+
 </html>

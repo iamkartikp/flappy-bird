@@ -58,11 +58,10 @@ gameContainer.addEventListener("click", () => {
 bird.addEventListener('click', startGame);
 
 function startGame() {
-    createObstacle();
     let interval = setInterval(createObstacle, 2000);
     setInterval(() => {
         bird.style.bottom = Number(bird.style.bottom.slice(0, -2)) - 15 + "px";
-        if (bird.style.bottom.slice(0, -2) == "-40") {
+        if (Number(bird.style.bottom.slice(0, -2)) <= -10) {
             reset();
         }
         
@@ -77,6 +76,7 @@ function reset() {
     // bird.style.bottom = Number(bird.style.bottom.slice(0, -2)) + 0 + "px";
     // let highScore = localStorage.getItem("highScore");
     // Number(highScore) && Number(score) > Number(highScore) ? localStorage.setItem("highScore", score) : localStorage.setItem("highScore", score.innerText);
+    bird.style.bottom = "40px";
     alert(`Game over, score: `);
     window.location.reload();
 }

@@ -167,5 +167,6 @@ function gameOver() {
     document.removeEventListener('click', jump)
     ground.classList.add('ground')
     ground.classList.remove('ground-moving')
-    alert(`Game Over!! Score: ${Math.floor(score-1)}`)
+    if(confirm(`Game Over!! Score: ${Math.floor(score-1)}`))
+        window.location.reload();
 }
